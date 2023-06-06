@@ -89,6 +89,10 @@ img{
 .link li{
 	margin-right: 20px;
 }
+.link a{
+	text-decoration: none;
+	color:#ffffff;
+}
 .header h1{
 	font-weight: 900;
 	font-size: 120px;
@@ -106,6 +110,10 @@ img{
 	border: 1px solid white;
 	border-radius: 10px;
   }
+.start-1 a:hover{
+	background: #ffffff;
+	color: #1E1E1E;
+}
 .imgs{
     display: flex;
     justify-content: flex-end;
@@ -385,6 +393,10 @@ img{
 	border: 1px solid white;
 	border-radius: 10px;
 }
+.start-2 a:hover{
+	background: #ffffff;
+	color: #1E1E1E;
+}
 .footer{
 	display:flex;
 	justify-content:space-between;
@@ -395,6 +407,12 @@ img{
 .footer p{
 	font-weight: 900; 
 	font-size: 80px;
+}
+.footer a{
+	font-weight: 900; 
+	font-size: 80px;
+	text-decoration: none;
+	color:#ffffff;
 }
 .ai-img{
 	width: 188.99px;
