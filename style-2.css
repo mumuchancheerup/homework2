@@ -96,33 +96,27 @@ img{
 .header h1{
 	font-weight: 900;
 	font-size: 120px;
-	margin-top: 40px;
+	margin: 40px 0px 80px 0px;
 }
-.start-1 a{
-	color:#ffffff;
-	text-decoration: none;
-	font-weight: 900;
-	font-size: 20px;
-	padding: 10px;
-	display: block;
-	width: 100px;
-	text-align:center;
-	border: 1px solid white;
-	border-radius: 10px;
-  }
-.start-1 a:hover{
-	background: #ffffff;
-	color: #1E1E1E;
+.header p{
+    font-weight: 900;
+    font-size: 48px;
+    margin: 0px 0px 238px 662px;
 }
 .imgs{
     display: flex;
-    justify-content: flex-end;
-    margin: 100px 0px 180px 0px;
+   /* justify-content: flex-end;*/
+    margin-bottom: 160px;
 }
 @media (max-width: 375px){
 	.header h1{
 		font-size: 48px;
+        margin: 40px 0px 64px 0px;
 	}
+    .header p{
+        font-size: 28px;
+        margin: 0px 0px 258px 94px;
+    }
 	.imgs img{
 		width: 117px;
 	}
@@ -130,131 +124,103 @@ img{
 }
 
 
-/*我們的服務*/
-.service{
-	display:flex;
+/*定價*/
+.price h1{
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 80px;
+}
+.price-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.price-card h2{
+    font-weight: 900;
+    font-size: 32px;
+    margin: 0px 400px 12px 0px;
+}
+.price-card p{
+    font-weight: 400;
+    font-size: 16px;
+    list-style-type: disc;
+}
+.price-card{
+    border: 1px solid #f2f2f2;
+    border-radius:20px;
+    padding: 16px 32px 16px 32px;
+    margin: 0px 28px 28px 0px;
+}
+.pc{
+    display: flex;
+	flex-direction: column;
+    font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+    list-style-type: disc;
+	list-style-position: inside;
+}
+.price-card-bottom{
+    display: flex;
+	justify-content: space-between;
+}
+.price-card-bottom p{
+    font-weight: 900;
+}
+.price-card-bottom span{
+    font-weight: 400;
+}
+.price-card-bottom a{
+    text-decoration: none;
+	color:#ffffff;
+}
+
+
+
+/*使用規範*/
+.rule{
+	display: flex;
 	justify-content:space-between;
-	margin-bottom: 80px;
-} 
-.service-title{
+}
+.rule-title{
 	font-weight: 900;
 	font-size: 32px;
 }
-.service-project{
+.rule-project{
+	border-bottom: 1px solid #525252;
+	margin-bottom: 40px;
+}
+.rule-project h1{
 	font-weight: 900;
 	font-size: 48px;
 }
-.cards{
-	display:flex;
-	justify-content:space-between;
-} 
-.card{
-	border: 1px solid #ffffff;
-	border-radius: 10px;
-	width: 30%;
-	padding: 80px 20px 80px 40px;
-	margin: 0px 24px 160px 0px;
-}
-.card h1{
-	font-weight: 900;
+.rule-content{
+	font-weight: 400;
 	font-size: 32px;
-	margin-bottom:20px ;
-}
-.card p{
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.5;
-}
-@media (max-width: 375px){
-	.service{
-		flex-direction:column;
-	}
-	.service-title{
-		font-size: 20px;
-		margin-bottom: 24px;
-	}
-	.service-project{
-		font-size: 32px;
-	}
-	.cards{
-		flex-direction:column;
-	}
-	/*感覺縮小寬度是這邊出問題,但要怎麼改?*/
-	.card{
-		width: 82%;
-		padding: 80px 20px 80px 40px;
-		margin: 0px 0px 12px 0px;
-	}
+	padding: 24px 0px 40px 0px;
 }
 
+@media (max-width: 375px) {
+    .rule{
+        display: flex;
+        flex-direction:column;
+        margin: 12px;
+    }
+    .rule-title {
+        font-size: 28px;
+        margin: 0px 0px 48px 0px;
+    }
+    .rule-project {
+        margin-bottom: 24px;
+    }
+    .rule-project h1 {
+        font-size: 32px;
+    }
+    .rule-content {
+    font-size: 16px;
+    word-wrap: break-word;
+  }
+}
 
-/*來自合作夥伴*/
-.partner h1{
-	font-weight: 900;
-    font-size: 32px;
-    margin-bottom: 80px;
-    width: 100%;
-}
-.logos{
-    display: flex;
-	justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-.logos img{
-	width: 160px;
-	height: 40px;
-}
-.feedbacks ul{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 160px;
-    margin-bottom: 160px;
-}
-.feedback{
-	background: rgba(255, 255, 255, 0.08);
-	padding: 40px;
-    border-radius: 15px;
-	margin-right: 24px;
-}
-.star{
-    display: flex;
-    justify-content: space-between;
-	width: 20%;
-	margin-bottom: 22px;
-}
-.feedback p{
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.5;
-}
-.customer{
-    margin-top: 20px;
-    display: flex;
-}
-.photo{
-	width: 48px;
-	height: 48px;
-}
-.name{
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.5;
-}
-.company{
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 150%;
-}
-@media (max-width: 375px){
-	.feedbacks ul{
-		flex-direction:column;
-	}
-	.feedback{
-		margin-right: 0px;
-	}
-}
 
 
 /*超酷的應用*/
@@ -279,7 +245,6 @@ img{
 .list{
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
 }
 .list p{
 	font-weight: 400;
@@ -310,11 +275,14 @@ img{
 	.use {
 		border-radius: 20px;
 	}
+    .use-title{
+        font-size: 32px;
+    }
 	.button li{
 		margin: 0px;
 	}
-
 }
+
 
 
 /*切版任務一*/
@@ -343,7 +311,7 @@ img{
 .example-top h3{
 	font-weight: 900;
 	font-size: 20px;
-	line-height: 120%;
+	line-height: 1.2;
 }
 .example-content,.example-ai,.example-name,.hashtag{
 	font-weight: 400;
@@ -372,33 +340,38 @@ img{
 }
 
 
+
+/*常見問題*/
+.question{
+    display: flex;
+    justify-content:space-between;
+}
+.question h2{
+    font-weight: 900;
+    font-size: 32px;
+}
+.qa{
+    display: flex;
+    align-items: center;
+    border: 1px solid #f2f2f2;
+    border-radius:20px;
+    margin-bottom: 6px;
+}
+.qa img{
+    margin: 25px;
+}
+.qa p{
+    font-weight: 900;
+    font-size: 20px;
+    width: 732px
+}
+.qa-last{
+    margin-bottom: 155px;
+}
+
+
+
 /*表尾*/
-.footer-top{
-	display: flex;
-    flex-direction: column;
-	align-items: center;
-	margin-bottom: 180px;
-}
-.footer-top h1{
-	font-weight: 900;
-	font-size: 48px;
-	margin-bottom: 60px;
-	text-align: center;
-}
-.start-2 a{
-	color: #fff;
-	text-decoration: none;
-	font-weight: 900;
-	font-size: 20px;
-	display: block;
-	padding: 10px 20px 10px 20px;
-	border: 1px solid white;
-	border-radius: 10px;
-}
-.start-2 a:hover{
-	background: #ffffff;
-	color: #1E1E1E;
-}
 .footer{
 	display:flex;
 	justify-content:space-between;
@@ -406,9 +379,9 @@ img{
 	border-bottom: 1px solid #ffffff;
 	padding:80px 0px 80px 0px;
 }
-.footer-a{
-	display:flex;
-	flex-direction: column;
+.footer p{
+	font-weight: 900; 
+	font-size: 80px;
 }
 .footer a{
 	font-weight: 900; 
@@ -441,7 +414,7 @@ img{
 	.footer{
 		flex-direction: column-reverse;
 	}
-	.footer a{
+	.footer p,.footer a{
 		font-size: 48px;
 	}
 	.footer img{
